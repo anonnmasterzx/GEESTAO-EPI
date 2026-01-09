@@ -1,0 +1,41 @@
+.container {
+  padding: 24px;
+  background-color: #f8f9fa;
+  height: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+a{
+  text-decoration: none;
+}
+
+.button{
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.confirm{
+  background-color: #2e7d32;
+  color: #fff;
+  border: none;
+}
+.cancel{
+  background-color: #ccc;
+  border: none;
+}

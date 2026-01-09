@@ -1,0 +1,122 @@
+.container {
+  padding: 24px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #1e293b;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #1e293b;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  opacity: 0.9;
+}
+
+/* Busca */
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.searchBox input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+/* Tabela */
+.tableWrapper {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f1f5f9;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Status */
+.status {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.ativo {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.inativo {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Ações */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.edit {
+  color: #2563eb;
+}
+
+.delete {
+  color: #dc2626;
+}
+
+/* Estado vazio */
+.empty {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
+

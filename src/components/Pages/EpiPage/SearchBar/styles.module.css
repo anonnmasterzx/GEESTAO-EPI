@@ -1,0 +1,26 @@
+.searchWrapper {
+  position: relative;
+  width: 50%;
+}
+
+.searchWrapper input {
+  width: 100%;
+  padding: 10px 12px 10px 40px; /* espaço pro ícone */
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 18px;
+
+}

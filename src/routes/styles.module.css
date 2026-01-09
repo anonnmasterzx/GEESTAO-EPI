@@ -1,0 +1,9 @@
+.contenteside{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+.content{
+    margin: 20px;
+}

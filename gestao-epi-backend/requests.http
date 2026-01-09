@@ -1,0 +1,40 @@
+
+### Criar EPI
+POST http://localhost:3000/api/epis
+Content-Type: application/json
+
+{
+  "codigo": "080101.00010",
+  "tipo": "EP",
+  "descricao": "MASCARA DE SOLDA ESAB A20",
+  "CA": "67890",
+  "validadeCA": "2027-06-30T00:00:00.000Z",
+  "vidaUtilMeses": 24,
+  "fabricante": "Protec",
+  "estoqueMinimo": 5
+}
+
+### Listar EPIs
+GET http://localhost:3000/api/epis
+
+
+
+### Health
+GET http://localhost:3000/health
+
+### Saldo total do item no ERP
+GET http://localhost:3000/api/itens/080101.00001/saldo-erp
+
+### Saldos detalhados (por local/lote/série)
+GET http://localhost:3000/api/itens/080101.00001/saldo-erp/detalhe
+
+
+
+
+### Saldos em lote
+POST http://localhost:4000/api/itens/saldos-erp
+Content-Type: application/json
+
+{
+  "codigos": ["080101.00001", "080101.00002"]
+}

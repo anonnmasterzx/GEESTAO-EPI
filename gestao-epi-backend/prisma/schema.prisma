@@ -1,0 +1,51 @@
+
+// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlserver"
+  // A URL vem do prisma.config.ts -> env('DATABASE_URL')
+}
+
+model Epi {
+  id             Int      @id @default(autoincrement())
+  codigo         String   @unique
+  tipo           String
+  descricao      String
+  CA             String?
+  validadeCA     DateTime?
+  vidaUtilMeses  Int      @default(0)
+  fabricante     String?
+  estoqueMinimo  Int      @default(0)
+  Movimentacoes  MovimentacaoEpi[]
+}
+
+model Colaborador {
+  id          Int      @id @default(autoincrement())
+  nome        String
+  matricula   String   @unique
+  setor       String?
+  funcao      String?
+  ativo       Boolean  @default(true)
+  Movimentacoes  MovimentacaoEpi[]
+}
+
+model MovimentacaoEpi {
+  id            BigInt   @id @default(autoincrement())
+  epiId         Int
+  colaboradorId Int
+  dataHora      DateTime @default(now())
+  tipo          String   // "ENTREGA" | "DEVOLUCAO"
+  quantidade    Int
+  responsavel   String
+  observacao    String?
+  lote          String?
+
+  Epi         Epi         @relation(fields: [epiId], references: [id])
+  Colaborador Colaborador @relation(fields: [colaboradorId], references: [id])
+
+  @@index([colaboradorId, dataHora])
+  @@index([epiId, dataHora])
+}

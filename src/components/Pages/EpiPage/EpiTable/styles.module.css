@@ -1,0 +1,73 @@
+.tableWrapper {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f1f3f5;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #495057;
+}
+
+td {
+  padding: 12px;
+  font-size: 14px;
+  color: #343a40;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Hover da linha */
+tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Botão editar */
+.editBtn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  background: #ffc107 ;
+    color: #000;
+    font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.editBtn:hover {
+  background: #e0a800;
+  color: #fff;
+}
+
+/* Botão excluir */
+.deleteBtn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #dc3545;
+  background: #dc3545;
+    color: #fff;
+    font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.deleteBtn:hover {
+  background: #c82333;
+}
+/* Ações */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+

@@ -1,0 +1,39 @@
+.container {
+  padding: 24px;
+  background-color: #f8f9fa;
+  height: 100%;
+}
+
+/* Header da página */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Botão adicionar */
+.addBtn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid #cfcfcf;
+  background-color: #28a745;
+    color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.addBtn:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
